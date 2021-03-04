@@ -28,93 +28,93 @@ The design goals of the Razor network are to ensure the long term sustainability
 
 **1 Introduction** 
 
-` `1.1 Motivation 
-` `1.2 Previous work 
-     1.2.1 Lack of high degree of decentralization and economic security 
-     1.2.2 Lack of long term viability 
-     1.2.3 Cognitive load on developers 
-     1.2.4 Targeted misinformation and invalid source attacks
-     1.2.5 Bribing and P+ε attacks 
-  1.3 Design Goals 
-     1.3.1 High economic security 
-     1.3.2 High degree of decentralization 
-     1.3.3 Protection of stakers from various attacks 
-     1.3.4 Protection of clients from malicious stakers 
-     1.3.5 Censorship resistance 
-     1.3.6 Ease of use for application developers 
-     1.3.7 Collusion and bribing attack resistance 
-  1.4 Architectural overview 
-     1.4.1 Oracle 
-     1.4.2 Job manager 
-     1.4.3 Client Application 
-     1.4.4 User 
+  -1.1 Motivation 
+  -1.2 Previous work 
+     -1.2.1 Lack of high degree of decentralization and economic security 
+     -1.2.2 Lack of long term viability 
+     -1.2.3 Cognitive load on developers 
+     -1.2.4 Targeted misinformation and invalid source attacks
+     -1.2.5 Bribing and P+ε attacks 
+  -1.3 Design Goals 
+     -1.3.1 High economic security 
+     -1.3.2 High degree of decentralization 
+     -1.3.3 Protection of stakers from various attacks 
+     -1.3.4 Protection of clients from malicious stakers 
+     -1.3.5 Censorship resistance 
+     -1.3.6 Ease of use for application developers 
+     -1.3.7 Collusion and bribing attack resistance 
+  -1.4 Architectural overview 
+     -1.4.1 Oracle 
+     -1.4.2 Job manager 
+     -1.4.3 Client Application 
+     -1.4.4 User 
 
 **2 Architecture** 
 
-  2.1 RAZOR - Native token or Razor network 
-     2.1.1 Utility of RAZOR 
-     2.1.2 Supply Schedule 
-  2.2 Actors 
-  2.3 Oracle Layer 
-     2.3.1 Epoch 
-     2.3.2 States 
-     2.3.3 Job queue 
-     2.3.4 Actions 
-         2.3.4.1 Stake 
-         2.3.4.2 Commit 
-         2.3.4.3 Reveal 
-         2.3.4.4 Propose Block 
-         2.3.4.5 Dispute Block 
-         2.3.4.6 Unstake 
-         2.3.4.7 Withdraw 
-         2.3.4.8 Submit results 
-         2.3.4.9 Submit job 
-         2.3.4.10 Dispute Results 
-  2.4 Dispute mechanism 
-  2.5 Incentives and penalties 
-     2.5.1 Penalties and rewards for reporting data 
-     2.5.2 Block reward 
-     2.5.3 Fees 
-     2.5.4 Validity bond 
-     2.5.5 Dispute bond 
-     2.5.6 Penalties for misbehavior 
-  2.6 Security 
-     2.6.1 Economic security 
-     2.6.2 Attacks
-         2.6.2.1 Influence of large stakers 
-         2.6.2.2 Takeover 
-         2.6.2.3 Bribing
-         2.6.2.4 Collusion 
-         2.6.2.5 Griefing 
-         2.6.2.6 Invalid source attack 
-         2.6.2.7 Bribing attack 
+  -2.1 RAZOR - Native token or Razor network 
+     -2.1.1 Utility of RAZOR 
+     -2.1.2 Supply Schedule 
+  -2.2 Actors 
+  -2.3 Oracle Layer 
+     -2.3.1 Epoch 
+     -2.3.2 States 
+     -2.3.3 Job queue 
+     -2.3.4 Actions 
+         -2.3.4.1 Stake 
+         -2.3.4.2 Commit 
+         -2.3.4.3 Reveal 
+         -2.3.4.4 Propose Block 
+         -2.3.4.5 Dispute Block 
+         -2.3.4.6 Unstake 
+         -2.3.4.7 Withdraw 
+         -2.3.4.8 Submit results 
+         -2.3.4.9 Submit job 
+         -2.3.4.10 Dispute Results 
+  -2.4 Dispute mechanism 
+  -2.5 Incentives and penalties 
+     -2.5.1 Penalties and rewards for reporting data 
+     -2.5.2 Block reward 
+     -2.5.3 Fees 
+     -2.5.4 Validity bond 
+     -2.5.5 Dispute bond 
+     -2.5.6 Penalties for misbehavior 
+  -2.6 Security 
+     -2.6.1 Economic security 
+     -2.6.2 Attacks
+         -2.6.2.1 Influence of large stakers 
+         -2.6.2.2 Takeover 
+         -2.6.2.3 Bribing
+         -2.6.2.4 Collusion 
+         -2.6.2.5 Griefing 
+         -2.6.2.6 Invalid source attack 
+         -2.6.2.7 Bribing attack 
 
 **3 Governance**
 
-  3.1 Voting 
+  -3.1 Voting 
 
 **4 Scalability** 
 
 **5 Applications** 
 
-  5.1 Synthetic assets platform 
+  -5.1 Synthetic assets platform 
 
 **6 Future work** 
 
-  6.1 Scalability improvements 
-  6.2 Improvements to the governance layer 
+  -6.1 Scalability improvements 
+  -6.2 Improvements to the governance layer 
 
 **7 Acknowledgments** 
 
 ## List of figures 
 
-1 Architectural overview
-2 Process flow in Razor network
-3 Epochs and their overlap overlap
-4 Selection of the jobs from the job
-5 Merkle tree of commitments
-6 Assignment of jobs to a staker
-7 Selection for the block proposer list
+1. Architectural overview
+1. Process flow in Razor network
+1. Epochs and their overlap overlap
+1. Selection of the jobs from the job
+1. Merkle tree of commitments
+1. Assignment of jobs to a staker
+1. Selection for the block proposer list
                                                                                                                                                              
 
 ## 1 Introduction
