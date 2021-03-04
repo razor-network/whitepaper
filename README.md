@@ -28,8 +28,8 @@ The design goals of the Razor network are to ensure the long term sustainability
 
 **1 Introduction** 
 
-  -1.1 Motivation 
-  -1.2 Previous work 
+  1.1. Motivation 
+  1.2. Previous work 
      -1.2.1 Lack of high degree of decentralization and economic security 
      -1.2.2 Lack of long term viability 
      -1.2.3 Cognitive load on developers 
