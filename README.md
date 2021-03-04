@@ -740,7 +740,7 @@ As discussed in 2.6.1 .
 
 A bribing attack is where the attacker bribes the stakers to perform actions to her favor. For the oracle to be bribe resistant, the following must be true: 
 
-*Profit from bribing < Cost of Bribe* 
+**Profit from bribing < Cost of Bribe** 
 
 Razor  network  aims  to  provide  a  high  degree  of  economic  security.  Since  it  is impossible to know which stakers will be assigned to the attacker's job in the commit state, the attacker will need to bribe 51% of the network.  
 
