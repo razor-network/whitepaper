@@ -16,7 +16,8 @@ penalized for reporting incoherently.
 
 Razor network uses a proof of stake consensus algorithm and uses a native utility token called RAZOR. RAZOR are needed to be locked to participate as a staker in the network. Stakers are awarded fees as well as block rewards for participating in the network. The amount of staked tokens of the staker determine their influence in the network.  
 
-The design goals of the Razor network are to ensure the long term sustainability of the oracle and the data feeds it provides, a high degree of decentralization, high economic security in a way that protects both stakers and clients of the oracle from various attacks. 
+The design goals of the Razor network are to ensure the long term sustainability of the oracle and the data feeds it provides, a high degree of decentralization, high economic security in a way that protects both stakers and clients of the oracle from various attacks. 
+
 PAGE28 
 
 **Table of contents** 
@@ -243,7 +244,7 @@ Razor network consists of 4 parts:
 1. Client application 
 1. User 
 
-![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.001.jpeg)
+![](Images/architectural-overview.jpeg)
 
 *Figure 1: Architectural overview*  
 
@@ -277,7 +278,7 @@ The Razor network consists of 3 layers:
 1. Job manager 
 1. Client application 
 
-![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.002.jpeg)
+![](Images/process-flow.jpeg)
 
 *Figure 2: Process flow in Razor network* 
 
@@ -338,7 +339,7 @@ manually by the stakers.
 
 ` `One cycle of the oracle is called an "epoch". Each epoch is divided into 5 stages of equal periods.  
 
-![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.003.png)
+![](Images/epochs-overlap.png)
 
 *Figure 3: Epochs and their overlap* 
 
@@ -363,7 +364,7 @@ Do note that there can be up to 3 epochs running simultaneously in different sta
 
 3. Job queue 
 
-![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.004.jpeg)
+![](Images/selection-of-job.jpeg)
 
 *Figure 4: Selection of jobs from the job queue* 
 
@@ -448,7 +449,7 @@ penalties.
 
 Commit action can only be performed during ***Commit*** state. At the beginning of this state, J jobs from the job queue are selected based on fees. All the stakers must process these jobs. In case a staker doesn’t perform this action, she will be penalized. Stakers must form a Merkle tree as shown below: 
 
-![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.005.jpeg)
+![](Images/merkle-tree.jpeg)
 
 *Figure 5: Merkle tree of commitments* 
 
@@ -520,9 +521,9 @@ if 0 ≤PRNG <  1, the first job is assigned ![](Aspose.Words.292d1e4a-bf2c-4a82
 
 4
 
-if  41 ≤ PRNG <  21, the second job is assigned, and so on. ![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.007.png)![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.008.png)
+if  41 ≤ PRNG <  21, the second job is assigned, and so on. 
 
-![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.009.png)
+![](Images/assignment-of-jobs.png)
 
 *Figure 6: Assignment of jobs to a staker* 
 
@@ -584,7 +585,7 @@ Where,
 
 ` `The above steps are repeated with increasing nonce (*n=*1,2,3,4,...*)* and whenever the second statement is evaluated to be true, that staker *S* *i* is added to the end of the block proposers list. Stakers who are already on the list are skipped. 
 
-![](Aspose.Words.292d1e4a-bf2c-4a82-806b-34adbbb118fa.010.jpeg)
+![](Images/block-prosper-list.jpeg)
 
 *Figure 7: Selection for the block proposer list* 
 
