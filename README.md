@@ -51,58 +51,58 @@ The design goals of the Razor network are to ensure the long term sustainability
 
 **2 Architecture** 
 
-  -2.1 RAZOR - Native token or Razor network 
-     -2.1.1 Utility of RAZOR 
-     -2.1.2 Supply Schedule 
-  -2.2 Actors 
-  -2.3 Oracle Layer 
-     -2.3.1 Epoch 
-     -2.3.2 States 
-     -2.3.3 Job queue 
-     -2.3.4 Actions 
-         -2.3.4.1 Stake 
-         -2.3.4.2 Commit 
-         -2.3.4.3 Reveal 
-         -2.3.4.4 Propose Block 
-         -2.3.4.5 Dispute Block 
-         -2.3.4.6 Unstake 
-         -2.3.4.7 Withdraw 
-         -2.3.4.8 Submit results 
-         -2.3.4.9 Submit job 
-         -2.3.4.10 Dispute Results 
-  -2.4 Dispute mechanism 
-  -2.5 Incentives and penalties 
-     -2.5.1 Penalties and rewards for reporting data 
-     -2.5.2 Block reward 
-     -2.5.3 Fees 
-     -2.5.4 Validity bond 
-     -2.5.5 Dispute bond 
-     -2.5.6 Penalties for misbehavior 
-  -2.6 Security 
-     -2.6.1 Economic security 
-     -2.6.2 Attacks
-         -2.6.2.1 Influence of large stakers 
-         -2.6.2.2 Takeover 
-         -2.6.2.3 Bribing
-         -2.6.2.4 Collusion 
-         -2.6.2.5 Griefing 
-         -2.6.2.6 Invalid source attack 
-         -2.6.2.7 Bribing attack 
+  - 2.1 RAZOR - Native token or Razor network 
+     - 2.1.1 Utility of RAZOR 
+     - 2.1.2 Supply Schedule 
+  - 2.2 Actors 
+  - 2.3 Oracle Layer 
+     - 2.3.1 Epoch 
+     - 2.3.2 States 
+     - 2.3.3 Job queue 
+     - 2.3.4 Actions 
+         - 2.3.4.1 Stake 
+         - 2.3.4.2 Commit 
+         - 2.3.4.3 Reveal 
+         - 2.3.4.4 Propose Block 
+         - 2.3.4.5 Dispute Block 
+         - 2.3.4.6 Unstake 
+         - 2.3.4.7 Withdraw 
+         - 2.3.4.8 Submit results 
+         - 2.3.4.9 Submit job 
+         - 2.3.4.10 Dispute Results 
+  - 2.4 Dispute mechanism 
+  - 2.5 Incentives and penalties 
+     - 2.5.1 Penalties and rewards for reporting data 
+     - 2.5.2 Block reward 
+     - 2.5.3 Fees 
+     - 2.5.4 Validity bond 
+     - 2.5.5 Dispute bond 
+     - 2.5.6 Penalties for misbehavior 
+  - 2.6 Security 
+     - 2.6.1 Economic security 
+     - 2.6.2 Attacks
+         - 2.6.2.1 Influence of large stakers 
+         - 2.6.2.2 Takeover 
+         - 2.6.2.3 Bribing
+         - 2.6.2.4 Collusion 
+         - 2.6.2.5 Griefing 
+         - 2.6.2.6 Invalid source attack 
+         - 2.6.2.7 Bribing attack 
 
 **3 Governance**
 
-  -3.1 Voting 
+  - 3.1 Voting 
 
 **4 Scalability** 
 
 **5 Applications** 
 
-  -5.1 Synthetic assets platform 
+  - 5.1 Synthetic assets platform 
 
 **6 Future work** 
 
-  -6.1 Scalability improvements 
-  -6.2 Improvements to the governance layer 
+  - 6.1 Scalability improvements 
+  - 6.2 Improvements to the governance layer 
 
 **7 Acknowledgments** 
 
