@@ -2,14 +2,14 @@
 
 Hrishikesh Huilgolkar CEO, Razor network Revision: 22nd January 2021 Version 1.4 
 
-##Abstract 
+## Abstract 
 ---
 
 Decentralized technologies such as blockchain are revolutionizing many industries including finance. Applications such as decentralized lending, stable currencies, prediction markets, and synthetic assets are being researched and built on top of them. Many such applications depend on real-world data, which is not readily available inside the blockchain environment due to their design. Currently, this problem is being solved by something called an “Oracle”, which is an entity that reads real-world data and feeds it to the blockchain. Current  Oracle  solutions  are  either  centralized  or  vulnerable  to  certain attacks. Current oracle solutions may work short term but are not suitable for long term applications, which is essential in decentralized applications.  
 
 In this paper, we propose a fully decentralized oracle network called "Razor network" with built-in governance, so that the network can thwart such attacks and remain functional in a constantly evolving environment. Razor network is resilient to bribing attacks since it utilizes a high degree of redundancy and offers high economic security for all applications regardless of the fees being paid to the oracle. Razor network also can dispute the results of the oracle, which makes it resistant to many kinds of game theoretical vulnerabilities. 
 
-Razor network consists of stakers who accept queries from a job queue, perform
+Razor network consists of stakers<sup>1</sup> who accept queries from a job queue, perform
 fetching of information from the real-world, process and aggregate the results and serve
 them to the requesting application. Stakers are awarded for reporting coherently and
 penalized for reporting incoherently.
@@ -18,95 +18,95 @@ Razor network uses a proof of stake consensus algorithm and uses a native utilit
 
 The design goals of the Razor network are to ensure the long term sustainability of the oracle and the data feeds it provides, a high degree of decentralization, high economic security in a way that protects both stakers and clients of the oracle from various attacks. 
 
- _Stakers are users who lock their funds in a smart contract. This action is known as “staking”. Stakers are expected to perform their duties honestly, or else they may lose their funds and future profits._
+ _1 Stakers are users who lock their funds in a smart contract. This action is known as “staking”. Stakers are expected to perform their duties honestly, or else they may lose their funds and future profits._
 
 
 
-##Table of contents 
+## Table of contents 
 ---
 
 
 **1 Introduction** 
 
-1. Motivation 
-1. Previous work 
-   1. Lack of high degree of decentralization and economic security 
-   1. Lack of long term viability 
-   1. Cognitive load on developers 
-   1. Targeted misinformation and invalid source attacks
-   1. Bribing and P+ε attacks 
-1. Design Goals 
-   1. High economic security 
-   1. High degree of decentralization 
-   1. Protection of stakers from various attacks 
-   1. Protection of clients from malicious stakers 
-   1. Censorship resistance 
-   1. Ease of use for application developers 
-   1. Collusion and bribing attack resistance 
-1. Architectural overview 
-1. Oracle 
-1. Job manager 
-1. Client Application 
-1. User 
+  1.1 Motivation 
+  1.2 Previous work 
+     1.2.1 Lack of high degree of decentralization and economic security 
+     1.2.2 Lack of long term viability 
+     1.2.3 Cognitive load on developers 
+     1.2.4 Targeted misinformation and invalid source attacks
+     1.2.5 Bribing and P+ε attacks 
+  1.3 Design Goals 
+     1.3.1 High economic security 
+     1.3.2 High degree of decentralization 
+     1.3.3 Protection of stakers from various attacks 
+     1.3.4 Protection of clients from malicious stakers 
+     1.3.5 Censorship resistance 
+     1.3.6 Ease of use for application developers 
+     1.3.7 Collusion and bribing attack resistance 
+  1.4 Architectural overview 
+     1.4.1 Oracle 
+     1.4.2 Job manager 
+     1.4.3 Client Application 
+     1.4.4 User 
 
 **2 Architecture** 
 
-1. RAZOR - Native token or Razor network 
-   1. Utility of RAZOR 
-   1. Supply Schedule 
-1. Actors 
-1. Oracle Layer 
-1. Epoch 
-1. States 
-1. Job queue 
-1. Actions 
-1. Stake 
-1. Commit 
-1. Reveal 
-1. Propose Block 
-1. Dispute Block 
-1. Unstake 
-1. Withdraw 
-1. Submit results 
-9. Submit job 
-9. Dispute Results 
-4. Dispute mechanism 
-4. Incentives and penalties 
-1. Penalties and rewards for reporting data 
-1. Block reward 
-1. Fees 
-1. Validity bond 
-1. Dispute bond 
-1. Penalties for misbehavior 
-6. Security 
-1. Economic security 
-1. Attacks
-1. Influence of large stakers 
-1. Takeover 
-1. Bribing
-1. Collusion 
-1. Griefing 
-1. Invalid source attack 
-1. Bribing attack 
+  2.1 RAZOR - Native token or Razor network 
+     2.1.1 Utility of RAZOR 
+     2.1.2 Supply Schedule 
+  2.2 Actors 
+  2.3 Oracle Layer 
+     2.3.1 Epoch 
+     2.3.2 States 
+     2.3.3 Job queue 
+     2.3.4 Actions 
+         2.3.4.1 Stake 
+         2.3.4.2 Commit 
+         2.3.4.3 Reveal 
+         2.3.4.4 Propose Block 
+         2.3.4.5 Dispute Block 
+         2.3.4.6 Unstake 
+         2.3.4.7 Withdraw 
+         2.3.4.8 Submit results 
+         2.3.4.9 Submit job 
+         2.3.4.10 Dispute Results 
+  2.4 Dispute mechanism 
+  2.5 Incentives and penalties 
+     2.5.1 Penalties and rewards for reporting data 
+     2.5.2 Block reward 
+     2.5.3 Fees 
+     2.5.4 Validity bond 
+     2.5.5 Dispute bond 
+     2.5.6 Penalties for misbehavior 
+  2.6 Security 
+     2.6.1 Economic security 
+     2.6.2 Attacks
+         2.6.2.1 Influence of large stakers 
+         2.6.2.2 Takeover 
+         2.6.2.3 Bribing
+         2.6.2.4 Collusion 
+         2.6.2.5 Griefing 
+         2.6.2.6 Invalid source attack 
+         2.6.2.7 Bribing attack 
 
 **3 Governance**
 
-3.1 Voting 
+  3.1 Voting 
 
-**4 Scalability 
+**4 Scalability** 
 
-**5 Applications 
+**5 Applications** 
 
-5.1 Synthetic assets platform 
+  5.1 Synthetic assets platform 
 
 **6 Future work** 
 
-1. Scalability improvements 
-1. Improvements to the governance layer 
+  6.1 Scalability improvements 
+  6.2 Improvements to the governance layer 
 
-**7 Acknowledgments 
+**7 Acknowledgments** 
 
-##List of figures 
+## List of figures 
 
 1 Architectural overview
 2 Process flow in Razor network
@@ -117,10 +117,10 @@ The design goals of the Razor network are to ensure the long term sustainability
 7 Selection for the block proposer list
                                                                                                                                                              
 
-##1 Introduction
+## 1 Introduction
 --- 
 
-##1.1 Motivation 
+### 1.1 Motivation 
 
 Decentralized  networks,  through  the  use  of  smart  contracts,  are  disrupting established systems by removing the need for intermediaries and providing open access to everyone. Decentralized Finance is one of the most promising use cases of smart contracts. Some of the examples of Decentralized Finance (also known as DeFi)  applications include: 
 
@@ -136,12 +136,12 @@ These applications consists of a set of smart contracts deployed on a blockchain
 Hence, to facilitate the access to the outside world, the concept of "Oracles" has been proposed. An Oracle is an entity which queries the required data from the outside world and feeds it to the blockchain. Traditionally, this has been attempted through the use of trusted intermediaries. This is typically facilitated by accessing a data feed through an API or a webpage, validating it through multiple sources and feeding it to the blockchain. These intermediaries  are  centralized  entities  and  hence,  introduce  single  points of failure in a decentralized system. Such weaknesses are not desirable because they reduce the utility and security of a decentralized system to that of a centralized, trusted one. 
 
 To combat this weakness, the concept of a decentralized oracle was introduced.
-In this paper, we propose a general-purpose, resilient, decentralized and trustless Oracle platform, which addresses various shortfalls in the current designs.
+In this paper, we propose a general-purpose, resilient, decentralized and trustless<sup>2</sup> Oracle platform, which addresses various shortfalls in the current designs.
 
-_Trustless here means that no trusted third party or intermediaries are needed_
+_2 Trustless here means that no trusted third party or intermediaries are needed_
 
 
-**1.2 Previous work** 
+### 1.2 Previous work
 
 Previous attempts to solve this problem include application-specific oracles such as Augur,  gnosis,  MakerDao,  centralized  oracles  such  as  Provable  and  general-purpose decentralized  oracle platforms such as Truthcoin, SchellingCoin, Chainlink, Band, Kleros and Witnet. The current work is inspired by SchellingCoin protocols such as Kleros and Augur. 
 
@@ -157,9 +157,9 @@ Developing a decentralized oracle is deemed a challenging problem. This is due t
 
 Some of the current solutions involve a trusted centralized mediatory, which acts as a single point of failure, while others combine results from a few stakeholders of the network. Often, if a high degree of decentralization is desired, the client has to pay a high amount of fees proportional to the degree of decentralization desired. This means that the accuracy and economic security of the oracle platform is not the same for all jobs, and the oracle cannot be trusted as the “Universal source of truth”. 
 
-Let’s explore this problem with an example. Assume there is a CDP backed stablecoin project called “Acme". Acme platform issues US Dollar-pegged stablecoins backed by ether on the Ethereum blockchain, and hence, requires a data-feed of ether/USD. Acme depends on a decentralized oracle platform called "Truthbox". Truthbox assigns stakers to the query and reports the ether/USD price, every time Acme requests the data with a fee. The number of stakers assigned by Truthbox depends on the amount of fees being paid by Acme.
+Let’s explore this problem with an example. Assume there is a CDP<sup>3</sup> backed stablecoin project called “Acme". Acme platform issues US Dollar-pegged stablecoins backed by ether on the Ethereum blockchain, and hence, requires a data-feed of ether/USD. Acme depends on a decentralized oracle platform called "Truthbox". Truthbox assigns stakers to the query and reports the ether/USD price, every time Acme requests the data with a fee. The number of stakers assigned by Truthbox depends on the amount of fees being paid by Acme.
 
-_CDP means Collateralized Debt Position_
+_3 CDP means Collateralized Debt Position_
 
 This shows the weakness of the system. If someone requests to report the price to Acme with a very low fee, Truthbox will likely assign the task to a single staker (or very few stakers).  Hence  the  system  reduces  to  a  centralized  or  semi-centralized  oracle.  The protocol, in such cases, becomes vulnerable to various attacks such as griefing, bribing and collusion.  
 
@@ -187,19 +187,19 @@ Since most decentralized oracle providers use Truth-by-Consensus algorithms, thi
 
 Stakers may be bribed by the attacker to report incorrect values. P+ε is an even stronger form of bribing attack where the attacker only signals the bribe and does not end up paying any bribe. This kind of attack can be especially devastating to oracles since it bears no cost to the attacker. 
 
-##1.3 Design Goals 
+### 1.3 Design Goals 
 
 Design decisions have been made with the following goals in mind: 
 
 1. High Economic security 
 1. High degree of decentralization  
 1. Protection of stakers from various kinds of attacks 
-1. Protection of clients from malicious stakers
+1. Protection of clients<sup>4</sup> from malicious stakers
 1. Censorship resistance 
 1. Ease of use for developers 
 1. Collusion and Bribing attack resistance
 
-_Here, clients are entities who are requesting data-points from Razor oracle_
+_4 Here, clients are entities who are requesting data-points from Razor oracle_
 
  
 **1.3.1 High economic security** 
@@ -244,7 +244,7 @@ In  the  Razor  platform,  decisions  such  as  choosing  the  level  of  econom
 
 Due to the layered design and possibility of disputing results, the Razor network is resistant to such attacks. Collusion and bribing may be possible at one round of the oracle, but such results will likely be disputed and will be overturned in the dispute rounds. 
 
-##1.4 Architectural overview
+### 1.4 Architectural overview
 
 
 Razor network consists of 4 parts: 
@@ -278,7 +278,7 @@ This  is  an  application  using  the  oracle.  Razor,  being  a  general-purpos
 
 This is any user using the client application. The user may not even know that the Razor network is being used in the background for fetching data. 
 
-##2 Architecture 
+## 2 Architecture 
 
 The Razor network consists of 3 layers: 
 
@@ -290,7 +290,7 @@ The Razor network consists of 3 layers:
 
 *Figure 2: Process flow in Razor network* 
 
-##2.1 RAZOR - Native token or Razor network 
+### 2.1 RAZOR - Native token or Razor network 
 
 Razor network will have a native ***utility*** token called “RAZOR”. RAZOR are ERC20 tokens on the Ethereum main net. These are necessary to perform a variety of activities in the Razor network. There will be an initial supply of RAZOR and the rest will be minted and distributed to stakers as block rewards. 
 
@@ -305,7 +305,7 @@ RAZOR are necessary to perform the following activities in Razor:
 
 The block rewards will be high at the genesis to encourage staker participation and will slowly decrease over time. More details about the supply schedule will be discussed in a separate paper. 
 
-##2.2 Actors
+### 2.2 Actors
  
 1. Stakers 
 1. Clients 
@@ -314,7 +314,7 @@ Stakers are the users who stake their RAZOR to participate in processing jobs an
 
 Clients are users who use the services of the platform to get the values of various data points by paying the fees. 
 
-##2.3 Oracle Layer 
+### 2.3 Oracle Layer 
 
 RAZOR can be locked in a smart contract by users called "Stakers". RAZOR must be staked on Razor platform to perform various actions and generate rewards. Stakers are rewarded, to be honest, and report values in consensus with the majority of stakers. The datapoint reported with majority consensus will be regarded as the “truth” adherent to the “Truth by consensus” approach. Acting dishonestly may cause loss of stake. 
 
@@ -376,17 +376,15 @@ Do note that there can be up to 3 epochs running simultaneously in different sta
 
 The job queue consists of a list of queries that need to be processed by the oracle. The job queue is sorted by the amount of fees being paid. In every epoch, at most J jobs will be selected and processed by the stakers.  
 
-*J*  = *SN*× *L*
+*J*  = *S<sub>N</sub>* × *L* / (*R*)
 
-*R*
+
 
 Where, 
 
-*SN* is the total number of active stakers 
+*S<sub>N</sub>* is the total number of active stakers 
 
-R is the Redundancy factor and determines how many stakers will report the value 
-
-for each job 
+R is the Redundancy factor and determines how many stakers will report the value for each job 
 
 L is the Load factor,  defined by the number of jobs to be processed by each staker The governance layer will be able to make changes to the value of R and L as necessary, which, in turn, decide the value of J.  
 
@@ -411,7 +409,7 @@ The data source should:
  
 **2.3.4 Actions** 
 
-The  following  actions  can  be  performed  only  by  the  stakers:  Commit,  Reveal, Propose, Submit, Unstake, Withdraw. 
+The following actions can be performed only by the stakers: Commit, Reveal, Propose, Submit, Unstake, Withdraw. 
 
 Following actions can be performed by anyone: Dispute, Submit Job, Stake. 
 
@@ -425,19 +423,19 @@ There is no upper limit on the maximum number of stakers. However, only a certai
 
 A staker is selected to participate in the epoch if the following statement is true: 
 
-*PRN* < *Si*/(*Sm*× *D*)
+*PRN* < *S<sub>i</sub>* / (*S<sub>m</sub>*× *D*)
 
 
 Where, 
 
 *PRN* is a deterministic and verifiable Pseudo-Random Number generated by each staker 
 
-*Si* is the stake of ith staker 
+*S<sub>i</sub>* is the stake of ith staker 
 
-*Sm* is the stake of the staker with most stake
+*S<sub>m</sub>* is the stake of the staker with most stake
 *D* is the difficulty 
 
-Here, the difficulty D is adjusted each epoch so the selected number of participants *Swinners* is equal to the desired value. If it is above the desired value, D will be reduced by 5% and vice versa.It is necessary to limit the number of active stakers each epoch in the network to avoid scalability issues, hence *Swinners* should be set carefully by the governance layer to limit the maximum number of stakers in the network. 
+Here, the difficulty D is adjusted each epoch so the selected number of participants *S<sub>winners</sub>* is equal to the desired value. If it is above the desired value, D will be reduced by 5% and vice versa.It is necessary to limit the number of active stakers each epoch in the network to avoid scalability issues, hence *S<sub>winners</sub>* should be set carefully by the governance layer to limit the maximum number of stakers in the network. 
 
 Only the stakers selected in this lottery will be able to participate in that epoch. 
 
@@ -447,15 +445,15 @@ If jobs are pending in the job queue, stakers process them and submit the final 
 
 Hence, we will be using a cryptographic commit-reveal scheme to keep the stakers' results secret. The stakers selected by the lottery process described in 2.3.4.1 will be able to participate in this action. They must process all of the J jobs to be processed in this epoch,
 from the job queue and form a data structure called Merkle tree. The stakers then combine
-the root of the Merkle tree with a secret salt before hashing it. This hash is the “commitment” of the staker to the results she arrived at.
+the root of the Merkle tree<sup>5</sup> with a secret salt before hashing it. This hash is the “commitment” of the staker to the results she arrived at.
 
-_Merkle tree is a tree in which every leaf node is labeled with the hash of a data block, and every non-leaf node is labeled with the cryptographic hash of the labels of its child nodes._
+_5 Merkle tree is a tree in which every leaf node is labeled with the hash of a data block, and every non-leaf node is labeled with the cryptographic hash of the labels of its child nodes._
 
 Please note that the stakers process and commit all of the J jobs. But they will only reveal the values they are assigned to, in the reveal state. The jobs assigned to a staker are only revealed at the beginning of the reveal state, hence they must process and commit all of the J jobs honestly. 
 
 The stakers are heavily disincentivized to reveal their results by revealing their secret because  if  anyone  reveals  their  secret  in  the  commit  state, the stakers will face harsh penalties. 
 
-Commit action can only be performed during ***Commit*** state. At the beginning of this state, J jobs from the job queue are selected based on fees. All the stakers must process these jobs. In case a staker doesn’t perform this action, she will be penalized. Stakers must form a Merkle tree as shown below: 
+Commit action can only be performed during **Commit** state. At the beginning of this state, J jobs from the job queue are selected based on fees. All the stakers must process these jobs. In case a staker doesn’t perform this action, she will be penalized. Stakers must form a Merkle tree as shown below: 
 
 ![](Images/merkle-tree.jpeg)
 
@@ -473,31 +471,31 @@ Here,
 
 *C* = Commitment 
 
-H  =  Collision  Resistant  cryptographic  one  way Hash Function. We will be using keccak256 
+*H*  =  Collision  Resistant  cryptographic  one  way Hash Function. We will be using keccak256 
 
-e = epoch 
+*e* = epoch 
 
-R = Merkle Root 
+*R* = Merkle Root 
 
-S = secret, a 32 bytes randomly generated salt  
+*S* = secret, a 32 bytes randomly generated salt  
 
 Stakers must locally generate and save this salt carefully, as it is required to reveal the results in reveal stage. Also, if the secret is stolen and revealed by someone else, harsh penalties will apply. 
 
 To  reduce  the  chances  of losing salt, the following function can be used by the stakers to generate deterministic salts: 
 
-*S*  = *Sign*(*e*, *Sk*)
+*S*  = *Sign*(*e*, *S<sub>k</sub>*)
 
-Where *Sk* is the secret key (also known as the private key) of the staker. 
+Where *S<sub>k</sub>* is the secret key (also known as the private key) of the staker. 
 
 **2.3.4.3 Reveal** 
 
-This is the second stage of the reporting process. Stakers are supposed to reveal the secret they used in the Commit stage as well as the results of the job assigned to them, along with the Merkle proof proving that the submitted values are part of the commitment. This action can normally be performed in ***the Reveal*** state. However, anyone can call this function to submit another staker’s secret in ***Commit*** state to earn bounty and penalize that staker for revealing their secret. 
+This is the second stage of the reporting process. Stakers are supposed to reveal the secret they used in the Commit stage as well as the results of the job assigned to them, along with the Merkle proof proving that the submitted values are part of the commitment. This action can normally be performed in **the Reveal** state. However, anyone can call this function to submit another staker’s secret in **Commit** state to earn bounty and penalize that staker for revealing their secret. 
 
 Every staker will be assigned a job pseudorandomly as follows: 
 
 1. A pseudo-random number will be generated using the following salt: 
 
-*PRN = PRNG*(*n* || *Bc* || *StakerId* *)*
+*PRN* = PRNG(*n* || *B<sub>c</sub>* || *StakerId* )
 
 Where,  
 
@@ -507,13 +505,13 @@ Where,
 
 *n*= nonce
 
-*Bc* = block hash of the last block of the commit state 
+*B<sub>c</sub>* = block hash of the last block of the commit state 
 
 2. The following equation will be evaluated to determine which jobs are assigned to the staker 
 
 *nth* Job will be assigned to the staker if the following condition is satisfied: 
 
-*n/(J)*  < *PRN* ≤ *n*+1 /(*J*)
+*n / (J)*  <  *PRN*  ≤  *n*+1 / (*J*)
 
 Here, 
 
@@ -540,7 +538,7 @@ The staker must prove that she is only reporting the jobs as assigned to her, sh
 
 As an example, let's assume J = 4 and jobs  *J*1 and  *J*4 are assigned to a staker. She must call the Commit action with the following parameters: 
 
-*Commit* (*e*, *S*, *J*1, *R*1, *J*4, *R*4, *L*2, *L*3) 
+*Commit* (*e*, *S*, *J<sub>1</sub>*, *R<sub>1</sub>*, *J<sub>4</sub>*, *R<sub>4</sub>*, *L<sub>2</sub>*, *L<sub>3</sub>*) 
 
 Where, 
 
@@ -548,11 +546,11 @@ Where,
 
 *S* is the secret used in commit state 
 
-*J*1is the job ID of job 1 
+*J<sub>1</sub>* is the job ID of job 1 
 
-*R*1is the result of job 1 as committed by the staker
+*R<sub>1</sub>* is the result of job 1 as committed by the staker
 
-*L*2is the hash of leaf 2 
+*L<sub>2</sub>* is the hash of leaf 2 
 
 From  Figure  5,  you  can  see  that  this  much  information  is  sufficient  to  partially reconstruct the Merkle tree and derive the Merkle root. The Merkle root and the secret will be used to reconstruct the commitment and it will be verified against the commitment made by the staker. 
 
@@ -564,23 +562,23 @@ The following algorithm is used to prepare the block proposer priority list:
 
 1. First, we will select a staker pseudorandomly by virtually rolling a  *N* sided fair die. This can be calculated programmatically as:  
 
-*Si* = ⌊*PRNG*(*n* || *BR*) ∗ *N*⌋ 
+*S<sub>i</sub>* = ⌊*PRNG*(*n* || *B<sub>R</sub>*) ∗ *N*⌋ 
 
 Where, 
 
-*Si* = Staker ID 
+*S<sub>i</sub>* = Staker ID 
 
 *PRNG*  = Pseudo-Random Number Generator function which utilizes provided salt *n* = nonce 
 
 *n* = nonce
 
-*BR* = block hash of the last block of reveal state of current epoch
+*B<sub>R</sub>* = block hash of the last block of reveal state of current epoch
 
 *N* = Number of stakers 
 
 2. Then we will evaluate the following equation: 
 
-*S*/(*SM*)) ≤ *PRNG*(*n* || *Si*  || *BR*  )
+*S* / (*S<sub>M</sub>*)  ≤  *PRNG*(*n* || *S<sub>i</sub>*  || *B<sub>R</sub>*  )
 
 _Each block in blockchains such as Ethereum has a hash. This hash is virtually random and depends on the contents of the block and hash of the previous block._
 
@@ -589,9 +587,9 @@ Where,
 
 *S* = Stake of the staker 
 
-*SM* = Stake of the staker with the highest Stake 
+*S<sub>M</sub>* = Stake of the staker with the highest Stake 
 
-The above steps are repeated with increasing nonce (*n=*1,2,3,4,...*)* and whenever the second statement is evaluated to be true, that staker *S* *i* is added to the end of the block proposers list. Stakers who are already on the list are skipped. 
+The above steps are repeated with increasing nonce (*n=*1,2,3,4,...*)* and whenever the second statement is evaluated to be true, that staker *S<sub>i</sub>* is added to the end of the block proposers list. Stakers who are already on the list are skipped. 
 
 ![](Images/block-prosper-list.jpeg)
 
@@ -599,7 +597,7 @@ The above steps are repeated with increasing nonce (*n=*1,2,3,4,...*)* and whene
 
 To propose, the staker must call the following function in the smart contract: 
 
-*Propose*(*e*, *n*, *SMS* , *M1* , *M2* , *M3* , ..., *MJ*) 
+*Propose*(*e*, *n*, *S<sub>MS</sub>* , *M<sub>1</sub>* , *M<sub>2</sub>* , *M<sub>3</sub>* , ..., *M<sub>J</sub>*) 
 
 Here,  
 
@@ -607,11 +605,11 @@ Here,
 
 ` `n = nonce 
 
-*MJ* = Median for job J 
+*M<sub>J</sub>* = Median for job J 
 
-*SMS*  = Staker ID of the staker with maximum stake 
+*S<sub>MS</sub>*  = Staker ID of the staker with maximum stake 
 
-A  valid  proposal  with  the  lowest nonce and  *SMS* with  the  highest  stake will be selected  as  a  block.  Even though the value of  *SMS* is available in the smart contract, calculating it will require iterating through all the stakers. Hence to overcome the technical challenge, it is instead proposed by the stakers.  
+A  valid  proposal  with  the  lowest nonce and  *S<sub>MS</sub>* with  the  highest  stake will be selected  as  a  block.  Even though the value of  *S<sub>MS</sub>* is available in the smart contract, calculating it will require iterating through all the stakers. Hence to overcome the technical challenge, it is instead proposed by the stakers.  
 
 Since all the values to be submitted by the stakers are deterministic from the data available inside the blockchain, there should be no reason for miscalculations and deviation of the values from the true values. Hence harsh penalties will be applied if an invalid block is proposed. 
 
@@ -643,7 +641,7 @@ Anyone can submit a job to the job queue as long as the required fees are paid. 
 
 The results of the oracle can be disputed. This can be performed by anyone, including stakers, client application developers, client application users, bounty hunters, etc. 
 
-##2.4 Dispute mechanism 
+### 2.4 Dispute mechanism 
 
 If anyone is unhappy with the results of the oracle, they can dispute the results by contributing to the dispute bond. The dispute bond does not need to be filled by a single user and can be contributed to by multiple users. If the dispute bond is filled within the dispute period, the dispute round starts. 
 
@@ -653,7 +651,7 @@ The dispute round is manual and can take a few days to a week depending on the r
 
 The results of the dispute round can be further disputed multiple times. The stakers exposure, dispute bond, and hence the resulting economic security double every round. 
 
-##2.5 Incentives and penalties 
+### 2.5 Incentives and penalties 
 
 It is necessary to design a balanced incentivization system. If the incentives are not substantial enough or if the penalties are too harsh, the platform will not attract a large number of stakers. 
 
@@ -708,7 +706,7 @@ If a staker proposes an invalid block, it can be proven by anyone by performing 
 
 For each epoch a staker does not commit a result, she will get, e.g. 1% of her stake. While committing but not revealing data points in an epoch will result in a penalty of 5% of her stake. These values are for representation purposes and will change in the future on further analysis. 
 
-##2.6 Security 
+### 2.6 Security 
 
 Razor uses widely used cryptographic primitives, which are proven to be secure and well  optimized.  keccak256  hash  function,  used  for  the  commit-reveal  scheme  and  for generating seed from block hashes for a random number generator, is collision-resistant.  
 
@@ -781,7 +779,7 @@ In  case  the  results  are  not  disputed,  The  penalties  are  small  enough 
 
 It  may be possible to successfully bribe one of the rounds of the oracle. However the possibility of disputing the results strongly disincentives bribing attacks. This is because it becomes  increasingly  difficult  to  bribe  further  dispute  rounds and eventually the honest stakers will overturn the results reported by malicious stakers. 
 
-##3 Governance 
+## 3 Governance 
 
 Governance layer performs changes to the parameters of the oracle layer.  
 
@@ -791,7 +789,7 @@ Voting can be done by stakers in the network. The stake of the staker determines
 
 More details on governance will be added in future versions of the whitepaper. 
 
-##4 Scalability 
+## 4 Scalability 
 
 Due to the design of the platform, it becomes necessary to perform multiple on-chain transactions by each staker for each epoch. This can be quite expensive, especially for small stakers as the rewards gained by staking may not cover the transaction costs.  
 
@@ -808,7 +806,7 @@ Honeybadger  BFT  was  chosen  as  a  consensus  algorithm  since  it  offers  t
 
 For further details, please refer to the original Honey Badger BFT whitepaper. 
 
-##5 Applications 
+## 5 Applications 
 
 Any  application  which  depends  on  real-world  data  can  utilize  Razor  network  to provide  data  points  in  a decentralized and trustless manner. Razor network is specially designed for long term decentralized applications requiring a high degree of decentralization and economic security. Decentralized finance applications are especially suitable since they almost always require such a data source. 
 
@@ -831,7 +829,7 @@ A synthetic assets platform can be built using Razor network in the following wa
 1. To long, buy a synthetic asset off the market. To short, mint it and sell it on the market. 
 
 
-##6 Future work 
+## 6 Future work 
 
 **6.1 Scalability improvements** 
 
@@ -841,6 +839,6 @@ Razor network can be deployed on any Ethereum compatible blockchain. Currently, 
 
 Onchain governance is an ongoing area of research. Improvements will be made to the governance layer over time according to the latest research. 
 
-##7 Acknowledgments 
+## 7 Acknowledgments 
 
 Special thanks to Clément Lesaege, Joey Krug, Nathan Sexer, Simon Polrot and Vitalik Buterin for their valuable feedback and suggestions .
