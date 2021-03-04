@@ -28,26 +28,26 @@ The design goals of the Razor network are to ensure the long term sustainability
 
 **1 Introduction** 
 
-  1.1. Motivation 
-  1.2. Previous work 
-     -1.2.1 Lack of high degree of decentralization and economic security 
-     -1.2.2 Lack of long term viability 
-     -1.2.3 Cognitive load on developers 
-     -1.2.4 Targeted misinformation and invalid source attacks
-     -1.2.5 Bribing and P+ε attacks 
-  -1.3 Design Goals 
-     -1.3.1 High economic security 
-     -1.3.2 High degree of decentralization 
-     -1.3.3 Protection of stakers from various attacks 
-     -1.3.4 Protection of clients from malicious stakers 
-     -1.3.5 Censorship resistance 
-     -1.3.6 Ease of use for application developers 
-     -1.3.7 Collusion and bribing attack resistance 
-  -1.4 Architectural overview 
-     -1.4.1 Oracle 
-     -1.4.2 Job manager 
-     -1.4.3 Client Application 
-     -1.4.4 User 
+ - 1.1. Motivation 
+ - 1.2. Previous work 
+     - 1.2.1 Lack of high degree of decentralization and economic security 
+     - 1.2.2 Lack of long term viability 
+     - 1.2.3 Cognitive load on developers 
+     - 1.2.4 Targeted misinformation and invalid source attacks
+     - 1.2.5 Bribing and P+ε attacks 
+ - 1.3 Design Goals 
+     - 1.3.1 High economic security 
+     - 1.3.2 High degree of decentralization 
+     - 1.3.3 Protection of stakers from various attacks 
+     - 1.3.4 Protection of clients from malicious stakers 
+     - 1.3.5 Censorship resistance 
+     - 1.3.6 Ease of use for application developers 
+     - 1.3.7 Collusion and bribing attack resistance 
+ - 1.4 Architectural overview 
+     - 1.4.1 Oracle 
+     - 1.4.2 Job manager 
+     - 1.4.3 Client Application 
+     - 1.4.4 User 
 
 **2 Architecture** 
 
