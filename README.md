@@ -1,4 +1,4 @@
-﻿**Razor Network: A decentralized oracle platform**  
+**Razor Network: A decentralized oracle platform**  
 
 Hrishikesh Huilgolkar CEO, Razor network Revision: 22nd January 2021 Version 1.4 
 
