@@ -107,6 +107,7 @@ The design goals of the Razor network are to ensure the long term sustainability
 **7 Acknowledgments** 
 
 ## List of figures 
+---
 
 1. Architectural overview
 1. Process flow in Razor network
