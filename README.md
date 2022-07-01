@@ -579,7 +579,7 @@ Where,
 
 2. Then we will evaluate the following equation: 
 
-*S* / (*S<sub>M</sub>*)  ≤  *PRNG*(*n* || *S<sub>i</sub>*  || *B<sub>R</sub>*  )
+*S* / (*S<sub>M</sub>*) >= *PRNG*(*n* || *S<sub>i</sub>* || *B<sub>R</sub>*)
 
 _Each block in blockchains such as Ethereum has a hash. This hash is virtually random and depends on the contents of the block and hash of the previous block._
 
